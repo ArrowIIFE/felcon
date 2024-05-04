@@ -10,12 +10,10 @@
   <script>
     const numbers = [45, 56, 67, 9, 23, 0];
 
-    let txt = " ";
-    numbers.forEach(myFunction);
-    document.getElementById("demo").innerHTML = txt;
-
-    function myFunction(value) {
-      txt += value + "<br />";
+    const net = numbers.reduce(myFunction);
+    document.getElementById("demo").innerHTML = net;
+    function myFunction(total, value) {
+      return total + value;
     }
   </script>
 </hmtl>

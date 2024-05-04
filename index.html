@@ -5,5 +5,17 @@
   </head>
   <body>
     <h1>Hello</h1>
+    <p id="demo"></p>
   </body>
+  <script>
+    const numbers = [45, 56, 67, 9, 23, 0];
+
+    let txt = " ";
+    numbers.forEach(myFunction);
+    document.getElementById("demo").innerHTML = txt;
+
+    function myFunction(value) {
+      txt += value + "<br />";
+    }
+  </script>
 </hmtl>

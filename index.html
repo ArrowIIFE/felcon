@@ -5,15 +5,13 @@
   </head>
   <body>
     <h1>Hello</h1>
-    <p id="demo"></p>
+    <p id="demo">Java is best programming language</p>
   </body>
   <script>
-    const numbers = [45, 56, 67, 9, 23, 0];
-
-    const net = numbers.reduce(myFunction);
-    document.getElementById("demo").innerHTML = net;
-    function myFunction(total, value) {
-      return total + value;
-    }
+    const txt = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = txt.replace(
+      "Java",
+      "Javascript"
+    );
   </script>
 </hmtl>
